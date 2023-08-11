@@ -47,6 +47,18 @@ func (m *Menu) AddItem(option string, id string) *Menu {
 	return m
 }
 
+// AddSubmenu will add a new menu option to the menu list
+func (m *Menu) AddSubmenu(option string, id string, submenu *Menu) *Menu {
+	menuItem := &MenuItem{
+		Text: option,
+		ID: id,
+		SubMenu: submenu,
+	}
+
+	m.MenuItems = append(m.MenuItems, menuItem)
+	return m
+}
+
 // renderMenuItems prints the menu item list.
 // Setting redraw to true will re-render the options list with updated current selection.
 func (m *Menu) renderMenuItems(redraw bool) {
