@@ -6,7 +6,7 @@ Lightweight interactive CLI selection library
 
 ## Import the package
 ```go
-import "github.com/nexidian/gocliselect"
+import "github.com/jlaso/gocliselect"
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ menu.AddItem("Yellow", "yellow")
 menu.AddItem("Cyan", "cyan")
 ```
 
-To display the menu and away the user choice call `Display()`
+To display the menu and wait for the user choice, call `Display()`
 
 ```go
 choice := menu.Display()
