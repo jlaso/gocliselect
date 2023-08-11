@@ -1,4 +1,4 @@
-module github.com/nexidian/gocliselect
+module github.com/jlaso/gocliselect
 
 go 1.17
 
